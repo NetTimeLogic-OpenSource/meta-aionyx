@@ -37,5 +37,5 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-rauc \
   ##OEROOT##/../meta-aionyx \
   ##OEROOT##/../meta-rust-bin \
-  ##OEROOT##/../meta-meta-ntl-hive \
+  ##OEROOT##/../meta-ntl-hive \
 "
