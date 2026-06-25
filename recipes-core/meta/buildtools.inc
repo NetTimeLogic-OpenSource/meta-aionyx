@@ -20,6 +20,7 @@ TOOLCHAIN_HOST_TASK += "\
 	nativesdk-xz \
 	nativesdk-cpio \
 	nativesdk-file \
+	nativesdk-kconfig-frontends \
 	nativesdk-u-boot-tools \
 	nativesdk-tcl \
 "
