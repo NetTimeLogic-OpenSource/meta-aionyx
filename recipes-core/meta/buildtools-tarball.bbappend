@@ -1,1 +1,1 @@
-buildtools-tarball.bbappend
+require recipes-core/meta/buildtools.inc
