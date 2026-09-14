@@ -34,5 +34,6 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-security/meta-tpm \
   ##OEROOT##/../meta-rauc \
   ##OEROOT##/../meta-aionyx \
+  ##OEROOT##/../meta-aionyx-hive \
   ##OEROOT##/../meta-rust-bin \
 "
