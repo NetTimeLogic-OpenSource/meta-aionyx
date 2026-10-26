@@ -11,4 +11,4 @@ python() {
         d.appendVarFlag('do_deploy', 'postfuncs', ' aionyx_compile_image_builder')
 }
 
-DT_SEARCH_ARG="-name *.dtb"
+DT_SEARCH_ARG = "-name *.dtb"
