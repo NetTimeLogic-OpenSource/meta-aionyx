@@ -24,7 +24,6 @@ COMMON_INSTALL = " \
     can-utils \
     pciutils \
     kernel-modules \
-    nfs-utils \
     nfs-utils-client \
     linux-xlnx-udev-rules \
     "
