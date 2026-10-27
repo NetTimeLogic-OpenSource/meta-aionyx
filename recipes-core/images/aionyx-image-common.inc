@@ -18,14 +18,10 @@ SYSTEMD_DEFAULT_TARGET = "${@bb.utils.contains_any('IMAGE_INSTALL', \
     'graphical.target', 'multi-user.target', d)}"
 
 COMMON_INSTALL = " \
-    tcf-agent \
     mtd-utils \
-    bridge-utils \
-    can-utils \
-    pciutils \
     kernel-modules \
-    nfs-utils-client \
     linux-xlnx-udev-rules \
+    htop \
     "
 
 IMAGE_INSTALL = " \
@@ -37,18 +33,5 @@ IMAGE_INSTALL = " \
 #Create devfs entries for initramfs(bundle) image
 USE_DEVFS = "${@'0' if d.getVar('INITRAMFS_IMAGE_BUNDLE') == '1' else '1'}"
 IMAGE_DEVICE_TABLES:append = " files/aionyx_dev_table.txt"
-
-INSTALL_ZYNQ_ZYNQMP_VERSAL = " \
-    fpga-manager-script \
-    htop \
-    iperf3 \
-    meson \
-    u-boot-tools \
-    "
-
-COMMON_INSTALL:append:zynqmp = " ${INSTALL_ZYNQ_ZYNQMP_VERSAL} libdfx"
-COMMON_INSTALL:append:zynq = " ${INSTALL_ZYNQ_ZYNQMP_VERSAL}"
-COMMON_INSTALL:append:versal = " ${INSTALL_ZYNQ_ZYNQMP_VERSAL} libdfx"
-COMMON_INSTALL:append:versal-net = " ${INSTALL_ZYNQ_ZYNQMP_VERSAL} libdfx"
 
 IMAGE_LINGUAS = " "
